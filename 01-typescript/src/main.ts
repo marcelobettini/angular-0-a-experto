@@ -1,9 +1,13 @@
 import './style.css'
-// import './chapters/01-basic-types'
-// import './chapters/02-arrays-objects-interfaces'
-// import './chapters/03-functions'
-// import './chapters/04-excercise'
-import './chapters/05-destructuring'
+// import './index/01-basic-types'
+// import './index/02-arrays-objects-interfaces'
+// import './index/03-functions'
+// import './index/04-excercise'
+// import './index/05-destructuring'
+// import './index/06-destructuring'
+// import './index/07-oop'
+// import './index/08-oop-composition'
+import './index/09-generics'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `
