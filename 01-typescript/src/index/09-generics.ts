@@ -50,3 +50,12 @@ const numberBox = new GenericBox<number>(123)
 const stringBox = new GenericBox<string>("Hello Generics")
 console.log(numberBox.getContent()) // 123
 console.log(stringBox.getContent()) // Hello Generics
+
+
+
+//Ahora que vimos genéricos podemos comprender los tipos condicionales y los tipos de utilidad
+//Los tipos condicionales permiten crear tipos que dependen de una condición
+//Por ejemplo, podemos crear un tipo que sea 'string' si el tipo genérico es 'string', o 'number' si el tipo genérico es 'number'
+type ConditionalType<T> = T extends string ? string : number
+const conditionalString: ConditionalType<string> = "Hello" // string
+const conditionalNumber: ConditionalType<number> = 42 // number
