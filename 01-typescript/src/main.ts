@@ -7,7 +7,7 @@ import './style.css'
 // import './index/06-destructuring'
 // import './index/07-oop'
 // import './index/08-oop-composition'
-import './index/09-generics'
+import './index/10-generics'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `
