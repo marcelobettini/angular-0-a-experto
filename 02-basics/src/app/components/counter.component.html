@@ -1,0 +1,24 @@
+<section>
+    <header>
+        <h2>Counter with Zone JS</h2>
+        <p>Current count: {{ count }}</p>
+    </header>
+    <div class="buttons">
+
+        <button (click)="increment()">Increment</button>
+        <button (click)="decrement()">Decrement</button>
+        <button (click)="reset()">Reset</button>
+    </div>
+</section>
+
+<section>
+    <header>
+        <h2>Counter with Signals</h2>
+        <p>Current count: {{ signalCount() }}</p>
+    </header>
+    <div class="buttons">
+        <button (click)="incrementSignal()">Increment</button>
+        <button (click)="decrementSignal()">Decrement</button>
+        <button (click)="resetSignal()">Reset</button>
+    </div>
+</section>
