@@ -1,4 +1,4 @@
-import { Component, signal, WritableSignal, } from "@angular/core"
+import { Component, computed, signal, WritableSignal } from "@angular/core"
 @Component({
     selector: 'app-counter',
     imports: [],
@@ -22,6 +22,8 @@ export class CounterComponent {
     reset() {
         this.count = 0
     }
+
+    doubleSignalCount = computed(() => this.signalCount() * 2)
 
     //Using Signals
     // This is a new way of handling state in Angular
