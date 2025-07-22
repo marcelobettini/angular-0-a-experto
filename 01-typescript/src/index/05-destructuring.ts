@@ -89,5 +89,3 @@ const actor02: IActor = {
     ],
 }
 displayActorInfo(actor02)
-
-export { }
